@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block content %}
+<div class="card" style="width: 50%;">
+            <div class="card-body">
+                <form id="upload-file" method="post" enctype="multipart/form-data">
+                    <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+                </form>
+    
+<div class="image-section" >
+        <div class="img-preview">
+            <div id="imagePreview">
+            </div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
+        </div>
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+
+    <h3 id="result">
+        <span> </span>
+    </h3>
+    </div>
+</div>
+{% endblock %}
